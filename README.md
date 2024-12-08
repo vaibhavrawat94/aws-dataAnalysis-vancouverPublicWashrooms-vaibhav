@@ -42,15 +42,12 @@ The project aims to analyze the accessibility of public washrooms in Vancouver u
 - **Outcome:** Data made available for profiling and cleaning.  
 
 *Diagram:*  
-![Data Ingestion](images/DataIngestion.png)  
+![Data Ingestion](Project-images/Ingestion.png)  
 
 ### **Step 2: Data Profiling**  
 - **Process:**  
   - Profiling in **AWS Glue DataBrew** to identify missing or anomalous data.  
 - **Outcome:** Generated a clean summary of data for preparation.  
-
-*Diagram:*  
-![Data Profiling](images/DataProfiling.png)  
 
 ### **Step 3: Data Cleaning**  
 - **Process:**  
@@ -58,10 +55,13 @@ The project aims to analyze the accessibility of public washrooms in Vancouver u
   - Handle missing data and normalize fields for consistency.  
 - **Outcome:** Transformed dataset stored in **Transformed Bucket** in S3.  
 
-*Diagram:*  
-![Data Cleaning](images/DataCleaning.png)  
+*Diagram: Cleaning & Profiling*  
+![Data Cleaning](Project-images/PipelineDesign.png)  
 
 ### **Step 4: Data Pipeline Design**  
+
+![Pipeline Design](Project-images/DataPipeline.png)  
+
 - **Process:**  
   - Implemented ETL pipeline in AWS Glue for processing.  
   - Calculated percentage of wheelchair-accessible washrooms by type.  
@@ -70,13 +70,21 @@ The project aims to analyze the accessibility of public washrooms in Vancouver u
   - Output stored in CSV (user-readable) and Parquet (system-optimized) formats.  
 
 *Diagram:*  
-![ETL Pipeline](images/ETLPipeline.png)  
+![ETL Pipeline](Project-images/DataPipeline.png)  
 
 ### **Step 5: Data Enrichment**  
 - **Process:**  
   - Created a data catalog in AWS Glue with crawlers.  
   - Ran queries in **AWS Athena** for enriched insights.  
-- **Outcome:** Improved data usability with metadata and additional context.  
+- **Outcome:** Improved data usability with metadata and additional context.
+
+  Data Governance Pipeline
+  
+  ![governance pipeline](Project-images/GovernancePipeline.png)
+
+  Dashboard
+  
+  ![dashboard](Project-images/Dashboard.png)
 
 ---
 
