@@ -56,11 +56,11 @@ The project aims to analyze the accessibility of public washrooms in Vancouver u
 - **Outcome:** Transformed dataset stored in **Transformed Bucket** in S3.  
 
 *Diagram: Cleaning & Profiling*  
-![Data Cleaning](Project-images/PipelineDesign.png)  
+![Data Cleaning](Project-images/Cleaning-Profiling.png)  
 
 ### **Step 4: Data Pipeline Design**  
 
-![Pipeline Design](Project-images/DataPipeline.png)  
+![Pipeline Design](Project-images/PipelineDesign.png)  
 
 - **Process:**  
   - Implemented ETL pipeline in AWS Glue for processing.  
